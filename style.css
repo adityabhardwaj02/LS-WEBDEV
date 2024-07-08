@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(gta5.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+nav{
+    background-color: rgb(99, 142, 192);
+    box-shadow: 3px 3px 5px rgba(0, 0,0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style:none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav li{
+    height:50px;
+}
+nav a{
+    height: 100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(192, 98, 197);
+}
+nav a:active{
+    background-color: rgb(228, 241, 43);
+}
+.content{
+    background-color: rgba(181, 117, 159, 0.8); /* Semi-transparent background */
+    padding:20px;
+    border: 2px;   /* Border around the text */
+    border-radius: 10px;
+    z-index:999; /* Optional: rounded corners */
+}
+h1{
+    text-align: center;
+    background-color: rgb(172, 201, 56);
+    height: 60px;
+    vertical-align:middle;
+    padding-top: 10px;
+}
+.image{
+    float: left;
+    overflow:fixed;
+}
+.highlights{
+    background-color: rgb(200, 227, 218);
+    border-radius: 10px;
+}
+.devices{
+    background-color: rgb(238, 168, 77);
+    border-radius: 5px;
+}
+#device1{
+    background-color:rgb(99, 239, 192);
+    font-weight: bold;
+    border: 2px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#device2{
+    background-color:blueviolet;
+    font-weight: bold;
+    border:2px;
+    border-radius:5px;
+    padding-left: 10px;
+}
+#device3{
+    background-color: rgb(30, 30, 217);
+    font-weight: bold;
+    border:2px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.quiz-container {
+    background-color: #dfdf77;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 97.59%;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.answer {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer:hover {
+    background-color: #0056b3;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(11, 11, 11);
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    text-align: center;
+    text-decoration:none;
+    padding:10px;
+    background-color: rgb(224, 138, 138);
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9; 
+}
+.socialIcons a:hover{
+    color:#111;
+    transition:0.5s;
+}
+.socialIcons a:hover i{
+    color:white;
+    transition:0.5s;
+}
+.footerNav ul{
+    display: flex;
+    justify-content:center;
+    padding-top: 30px;
+    padding-bottom:10px;
+}
+.footerNav ul li a{
+    color: white;
+    margin:20px;
+    text-decoration:none;
+    font-size:1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    
+}
+.footerNav ul li a:hover{
+    opacity:1;
+}
+.footerBottom{
+    background-color: black;
+    padding:20px;
+    text-align:center; 
+}
+.footerBottom p{
+    color:white;
+
+}
+.designer{
+    opacity:0.7;
+    text-transform:uppercase;
+    letter-spacing: 400;
+    margin: 0px 5px;
+}
+@media(max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align:center;
+        margin:10px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
